@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Essort Team</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img id="brand" src="kepek/logo.jpg" alt="brand logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Főoldal</a></li>
+                <li><a href="csapat.html">A csapat</a></li>
+                <li class="active"><a href="okosotthon.html">Projektek</a></li>
+                <li><a href="#">Magyarok a Marson</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <h2>
+        A Bástya robotban alkalmazott
+        megoldások és tapasztalatok
+
+    </h2>
+    <h3>
+        A Bástya robotban alkalmazott
+        megoldások és tapasztalatok
+        Essort - 2017
+        HURBA
+        A Bástya robot
+        Telepresence, és mesterséges intelligencia kísérletekre használható platform
+        Holonomic (omnidirectional) meghajtás
+        Három szabadság fokkal rendelkező fejmozgató mechanika
+        Nagy látószügű sztereo kamera
+        Essort - 2017
+        HURBA
+        A forma, és méret választás
+        A robot eredetileg a 10. Magyarok a Marson versenyre készült.
+        “Súlya nem haladhatja meg az 5kg-ot. Egy 30cm átmérőjű és 60cm magas hengerbe bele kell férnie”
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Omniwheel megoldás
+        A kerekek felületén görgők találhatóak.
+        Essort - 2017
+        HURBA
+        Az elrendezés miatt az egyenes haladáshoz kettő kereket forgatunk, a másik kettőn gördül.
+        Robot mozgatása - Motorok
+        Fém fogaskerekes hobbi szervó motorok, amiket átalakítottunk, hogy ne csak 180 fokot mozogjanak.
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Motorok kalibrálása tapasztalatok
+        Potméter rögzítés egyszerű, de inkább fix értékű ellenállásra érdemes cserélni.
+        Potméter pillanatragasztóval rögzítve is el tud mászni, ezért a motorokat mindig újra kell kalibrálni.
+        Az első verzióban az arduinoban volt az offset érték tárolva.
+        Később ezt a roboton lehetett állítani.
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Szervó vezérlés
+        A szervó motorok PWM jellel vezérelhetőek.
+
+        Az Arduino verzióval nem volt elég stabil a működés.
+
+        Most Adafruit szervó shieldet használunk, amivel sokkal stabilabb a működés.
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Programozás
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Programozás
+        Essort - 2017
+        HURBA
+        Robot mozgatása - Hálózati protokoll
+        TCP - robot mozgatása
+        Előnyei:
+        az adat nem veszik el
+        könnyű dolgozni vele
+        Hátrányai:
+        kapcsolat ingadozás esetén feltorlódott utasítások
+        (kicsit lassabb)
+        Essort - 2017
+        HURBA
+        UDP - fejmozgatása
+        Előnyei:
+        jól bírja a kapcsolati hibákat
+        (kicsit gyorsabb)
+        Hátrányai:
+        előfordulnak hibás csomagokhibás adatokat le kell kezelni a programban
+        Robot mozgatása - Hálózati protokoll
+        String alapú adat csomagok.
+        Arduino dolgozta fel első verzióban. Működött, de nem a legjobb megoldás.
+        Raspberry Pi-n dolgozzuk fel most Python szkriptben, és az alapján küldjük az utasítást I2C-n a szervó vezérlő shieldnek.
+        Jelenleg egy adatban küldjük el az összes motor vezérlő adatot.
+        Essort - 2017
+        HURBA
+        Robot mozgatása -Vezeték nélkül
+        USB-s WIFI stick
+        Essort - 2017
+        HURBA
+        Egyszerű 5Ghz-s router
+        Ipari Mikrotik router
+        Robot mozgatása - Programozás
+        Essort - 2017
+        HURBA
+        Kamerák mozgatása - Mechanika
+        A célja, hogy a robot mozgásától függetlenül lehessen körbe nézni.
+        Három darab szervó motorral oldottuk meg.
+        Essort - 2017
+        HURBA
+        Sztereo kamera - Lencse kiválasztása
+        A VR szemüveg látószögét megközelítő lencsét érdemes használni a kamerákon.
+        Essort - 2017
+        HURBA
+        Kamerák mozgatása - Programozás
+        Gyakorlatilag mind a 3 tengely mozgására külön szervó motort használunk.
+        Unreal engine esetén, a karakter fejmozgását követjük.
+        WebVR esetén a mobil telefonról kapott adatokat.
+        Offsetelve vannak itt is a motorok a kamera szemszögéből közép állásra.
+        Essort - 2017
+        HURBA
+        Sztereó kamera - Unreal Engine
+
+        A virtuális karakter előtt rögzítve van a kép, amin a böngészőben jelenik meg a videó stream.
+        Essort - 2017
+        HURBA
+        Attól függően, hogy “honnan” nézzük a virtuális böngészőt, rendereljük le a képet. Így a megfelelő kamera képet látjuk.
+        Sztereó kamera - Univerzális program
+        Essort - 2017
+        HURBA
+        USB
+        I2C
+        Sztereó kamera - Mobil VR
+
+        Mobil telefonon böngészőben is nézhető a videó stream. Egymás mellé rakjuk ki a kamerák képét, és így a legismertebb mobil VR felszerelésekkel is használható.
+        WebSocket-en keresztül küldjük el a telefonról a mozgás adatokat a robotnak.
+        Essort - 2017
+        HURBA
+        Sztereó kamera - Tapasztalatok
+        jelenleg 190 fokos lencséket használunk
+        a lencsék látószöge miatt nincs szükség utólagos kép korrekcióra
+        Essort - 2017
+        HURBA
+        Látószög
+        FPS
+        Felbontás
+        “Gömb” kamera kísérlet
+        Kipróbáltuk a robotot egy 360-as akció kamerával is.
+        Meglepően jó volt az eredmény, mert gyakorlatilag nem volt késleltetés a fej mozgatásakor.
+        Viszont hiányzott a tér érzet mert mind a két szem, csak a félgömb belsejére “vetített” képet látta, nem 3D képet.
+        Vezérlő számítógéppel összekötés komplex, ezért csak mobilVR megoldásokkal teszteltük.
+        Essort - 2017
+        HURBA
+        Képátvitel javításra kísérletek
+        A videó átküldése más megoldással, HTTP stream helyett például UDT
+
+        Essort - 2017
+        HURBA
+        Előnyei:
+        Nagyobb csomagokkal dolgozik
+        UDP elven működik, nem küld kétszer adatot. Ha elveszik egy kép részlet kisebb gond mintha késik a kép.
+
+        Programozási tapasztalatok
+        A sok funkció miatt szükséges a rész egységek tesztelése.
+        Roboton futó szerver szimulátor
+        Unreal Engine - headset nélküli mód
+        Teszt áramkörök (szervó tesztelő, Raspberry Pi)
+        Essort - 2017
+        HURBA
+        Fontos a sok programozás nyelv, és teszt miatt a dokumentáció, és verzió követés.
+        GIT
+        Biztonsági mentés teljes robotról, és vezérlő PC-ről.
+        Dokumentáció, kommentezés, telepítési útmutatók.
+        További távolabbi tervek
+        Felhasználói élmény javítás, magasabb robottal
+        Robot karok HTC Vive kontrollerrel irányítva
+        HTC Vive-ban mozgás lekövetése akár 5x5 méteres játék térben
+        Lidar alapján VR-ban nézhető térkép
+        Autonóm működés, roboton lévő képelemzéssel (arc felismerés)
+        Essort - 2017
+        HURBA
+
+    </h3>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+</body>
+</html>

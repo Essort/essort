@@ -1,0 +1,523 @@
+
+/*--------------Navbar-------------------*/
+body { padding-top: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#brand{
+    width: 150px;
+    height: 25px;
+}
+.navbar{
+    box-shadow: inset 0 0 5px 1px rgba(0,0,250,0.1);
+
+}
+
+/*---------------index/slider------------*/
+#slider {
+    background-color: #666;
+    background:url("../kepek/pic1.jpg") center center/cover no-repeat fixed;
+    -webkit-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    display: block;
+    text-align: center;
+    opacity: 80%;
+    position: static;
+    height: 100vh;
+}
+
+#slider h1,
+#slider h3 {
+    color: white;
+    text-transform: uppercase;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#slider h1 {
+    margin-top: 10%;
+    font-size: 46px;
+    margin-bottom: 0;
+    line-height: 1.75em;
+    letter-spacing: 10px;
+}
+
+#slider h3 {
+    font-size: 23px;
+    max-width: 90%;
+    margin: 0 5%;
+    letter-spacing: 2px;
+}
+
+.horizontal-separator {
+    border-bottom: solid 1px #ccc;
+    padding: 3px;
+    width: 50%;
+    margin: 0 25%;
+}
+/* -------------Buttons---------------- */
+span{
+    font-size: 26px;
+}
+.button
+{
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background: #35b88f;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    border-radius: 3em;
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+
+.button:hover
+{
+    background: #45c89f;
+}
+
+.button.style2
+{
+    color: #3a3939;
+    background: #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+}
+
+.button.style2:hover
+{
+    background: rgba(255,255,255,0.1);
+    color: #fff !important;
+    text-shadow: 0 0 0.5px rgba(255,255,255,0.25) !important;
+}
+
+.button.style2:active
+{
+}
+#gomb {
+    padding-top: 8%;
+    size: 36px;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}
+
+/*----------------features----------------*/
+#features p {
+    height: 100px;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+#features .image-placeholder {
+    margin-top: 10%;
+    width: 120%;
+    height: 440px;
+    margin-left: -20%;
+    background: #9f9493 url("../kepek/bastya.jpg") center center/cover no-repeat scroll;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    #features .col-md-6 .col-md-6 h2 {
+        font-size: 24px;
+    }
+
+    #features .col-md-6 .col-md-6 p {
+        height: 135px;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    #features .image-placeholder {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #features p {
+        height: auto;
+    }
+
+    #features h1 {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #features .btn-default {
+        float: right;
+    }
+
+    #features h2 {
+        clear: both;
+    }
+
+    .col-sm-6 ~ .col-sm-6 h2 {
+        margin-top: 75px;
+    }
+
+}
+@media (min-width: 992px){
+    #features .image-placeholder {
+        transform: perspective(600px) rotateY(20deg);
+        box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+        transition: all 300ms ease-in-out;
+        margin-left: -20%;}}
+
+#features .image-placeholder {
+    -webkit-transform: perspective(600px) rotateY(20deg);
+    transform: perspective(600px) rotateY(20deg);
+    -webkit-box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-left: -20%;
+}
+
+#features .image-placeholder:hover {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    box-shadow: -30px 20px 30px 0px rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-left: -15%;
+}
+
+
+		
+/*--------------scroll-------------------*/
+#careers {
+    opacity: 90%;
+    height: 300px;
+    background-color: #666;
+    background:url("../kepek/mameye.jpg") center center/cover no-repeat fixed;
+    -webkit-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    display: block;
+    text-align: center;
+    text-shadow: 0 0 7px rgba(255,255,255,255.3);
+}
+
+#careers h1, 
+#careers h3 {
+    color: black;
+    line-height: 3em;
+}
+
+#careers h1 {
+    margin-top: 10%;
+}
+
+#careers h3 {
+    max-width: 90%;
+    margin: 0 5%;
+}
+
+@media (min-width: 1680px) {
+
+    #careers h1 {
+        margin-top: 7.5%;
+    }
+    
+}
+
+@media (min-width: 2560px) {
+
+    #careers h1 {
+        margin-top: 5%;
+    }
+    
+}
+/*--------------benefits-----------------*/
+
+#benefits .image-placeholder {
+    margin-top: 10%;
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    background: #605337 url("../kepek/robi.png") center center/cover no-repeat scroll;
+}
+
+#benefits h3{
+    font-size: 18px;
+}
+
+#benefits .col-md-5 {
+    text-align: right;
+    margin-top: 75px;
+}
+
+@media (max-width: 991px) {
+
+    #benefits .col-md-5 {
+        text-align: left;
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 479px) {
+
+    #benefits h1 {
+        text-align: center;
+    }
+
+    #benefits h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.modal {
+    text-align: justify;
+    padding: 0 !important;
+    color: #fff;
+    text-shadow: none;
+    min-width: 320px;
+}
+
+.modal h2 {
+    text-align: left;
+}
+
+.modal-dialog {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    margin: 0;
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+}
+
+.modal-content {
+    border-radius: 0;
+    background: #666;
+}
+
+.modal-content .container {
+    background: #666;
+    width: 70%;
+    margin: 0 15%;
+}
+
+@media (max-width: 991px) {
+
+    .modal-content .container {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+.close {
+    color: #ccc;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    opacity: 1;
+}
+#benefits .image-placeholder {
+    -webkit-transform: perspective(600px) rotateY(-20deg);
+    transform: perspective(600px) rotateY(-20deg);
+    -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-left: 30px;
+}
+
+#benefits .image-placeholder:hover {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    box-shadow: 20px 20px 30px 0px rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-left: 0;
+}
+
+/*--------------footer-------------------*/
+footer {
+    background: #222831;
+    color: #fff;
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+.image{
+    filter: invert(100%);
+}
+/*--------------Blog---------------------*/
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 4rem;
+
+}
+.text-dark {
+    color: #343a40!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.blog-header {
+    line-height: 1;
+
+}
+.p-2 {
+    padding: .5rem!important;
+}
+.text-muted {
+    color: #6c757d!important;
+}
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/*--------------Friss----------------*/
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.font-italic {
+        font-style: italic!important;
+    }
+.display-4 {
+
+        font-weight: 300;
+        line-height: 1.2;
+    }
+h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: .5rem;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+    }
+h1 {
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+.text-white {
+        color: whitesmoke!important;
+    }
+.pl-0, .px-0 {
+    padding-left: 0!important;
+}
+.pr-0, .px-0 {
+    padding-right: 0!important;
+}
+@media (min-width: 768px){
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }}
+
+/*-----------Essort box-------------*/
+
+@media (min-width: 768px){
+        .p-md-5 {
+            padding: 3rem!important;
+        }}
+.rounded {
+            border-radius: .25rem!important;
+        }
+.bg-dark {
+       
+    height: 600px;
+        }
+.jumbotron {
+    margin-bottom: 2rem;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+                display: block;
+            }
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.text1 {
+	animation: text 3s 1;
+}
+@keyframes text { 
+0%{ color: black; } 
+30%{ letter-spacing: 25px; } 
+85%{ letter-spacing: 8px; }
+}
+
+/*------------------post----------------*/
+blockquote{
+    font-size: medium;
+}
+p{
+    font-size: large;
+}
+
+/*------------------404 error----------------*/
+#slider2 {
+    background-color: #666;
+    background:url("../kepek/404ee.jpg") center center/cover no-repeat fixed;
+    -webkit-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.3);
+    display: block;
+	position: static;
+    text-align: center;
+    opacity: 80%;
+    height: 100vh;
+}
