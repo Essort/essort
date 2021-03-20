@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+   
     <title>Essort Team</title>
 
     <!-- Bootstrap -->
@@ -26,66 +27,130 @@
                 <img id="brand" src="kepek/logo.jpg" alt="brand logo"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Főoldal</a></li>
+           <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Főoldal</a></li>
                 <li><a href="csapat.html">A csapat</a></li>
-                <li class="active"><a href="okosotthon.html">Projektek</a></li>
-                <li><a href="#">Magyarok a Marson</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li class="active"><a href="#">Projektek</a></li>
+                <li><a href="http://www.magyarokamarson.hu/weblap2019/index.php#kuldetes" target="_blank" >Magyarok a Marson 2019/20</a></li>
+                <li><a href="index.html#contact">Kapcsolat</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div>
-    <h2>
-        A Bástya robotban alkalmazott
-        megoldások és tapasztalatok
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-9 text-center">
+          <h1>A Bástya robot - Obelisc</h1>
+          <h2>Telepresence, és mesterséges intelligencia kísérletekre használható platform</h2>
+        </div>
+      </div>
+      <!--<div class="text-center">
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div> -->
 
-    </h2>
-    <h3>
-        A Bástya robotban alkalmazott
-        megoldások és tapasztalatok
-        Essort - 2017
-        HURBA
-        A Bástya robot
-        Telepresence, és mesterséges intelligencia kísérletekre használható platform
-        Holonomic (omnidirectional) meghajtás
-        Három szabadság fokkal rendelkező fejmozgató mechanika
-        Nagy látószügű sztereo kamera
-        Essort - 2017
-        HURBA
-        A forma, és méret választás
-        A robot eredetileg a 10. Magyarok a Marson versenyre készült.
-        “Súlya nem haladhatja meg az 5kg-ot. Egy 30cm átmérőjű és 60cm magas hengerbe bele kell férnie”
-        Essort - 2017
-        HURBA
-        Robot mozgatása - Omniwheel megoldás
-        A kerekek felületén görgők találhatóak.
-        Essort - 2017
-        HURBA
+      <div class="row icon-boxes">
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-stack-line"></i></div>
+            <h4 class="title"><a href="">Holonomic meghajtás</a></h4>
+            <p class="description">Omniwheel megoldás:
+        Az elrendezés miatt az egyenes haladáshoz kettő kereket forgatunk, a másik kettőn gördül.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-palette-line"></i></div>
+            <h4 class="title"><a href="">Három szabadság fokkal rendelkező fejmozgatás</a></h4>
+            <p class="description">A robot mozgásától függetlenül lehet körbenézni.
+        Három darab szervó motorral oldottuk meg.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-command-line"></i></div>
+            <h4 class="title"><a href="">Nagy látószügű sztereo kamera</a></h4>
+            <p class="description">Jelenleg 190 fokos lencséket használunk,
+        a lencsék látószöge miatt nincs szükség utólagos kép korrekcióra.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+          <div class="icon-box">
+            <div class="icon"><i class="ri-fingerprint-line"></i></div>
+            <h4 class="title"><a href="">Hálózati protokoll</a></h4>
+            <p class="description">Kezdetben Arduinot használtunk. Most Raspberry Pi-n dolgozzuk fel, Python szkriptben, az alapján küldjük az utasítást I2C-n a szervó vezérlőnek.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ </section>
+
+<div class="container marketing">
+	 <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">A forma, és méret választás. </h2>
+        <p class="lead">A robot eredetileg a 10. Magyarok a Marson versenyre készült.
+        “Súlya nem haladhatja meg az 5kg-ot. Egy 30cm átmérőjű és 60cm magas hengerbe bele kell férnie”</p>
+      </div>
+      <div class="col-md-5">
+        <img src="kepek/bastya1.png" alt="bastya kep" class="bd-placeholder-img" width="400" height="300">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Robot mozgatása I.</h2>
+        <p class="lead">       A kerekek felületén görgők találhatóak, omniwheel megoldást használtunk.
         Az elrendezés miatt az egyenes haladáshoz kettő kereket forgatunk, a másik kettőn gördül.
-        Robot mozgatása - Motorok
-        Fém fogaskerekes hobbi szervó motorok, amiket átalakítottunk, hogy ne csak 180 fokot mozogjanak.
-        Essort - 2017
-        HURBA
-        Robot mozgatása - Motorok kalibrálása tapasztalatok
-        Potméter rögzítés egyszerű, de inkább fix értékű ellenállásra érdemes cserélni.
-        Potméter pillanatragasztóval rögzítve is el tud mászni, ezért a motorokat mindig újra kell kalibrálni.
+        Fém fogaskerekes hobbi szervó motorokat alakítottunk át hogy ne csak 180 fokot mozogjanak.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+     <img src="kepek/bastya2.jpg" alt="bastya kep" class="bd-placeholder-img" width="400" height="300">
+      </div>
+
+	</div>
+ <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+       <div class="col-md-5 order-md-1">
+     <img src="kepek/servo.png" alt="bastya kep" class="bd-placeholder-img" width="400" height="300">
+      </div> 
+	  <div class="col-md-7 order-md-2">
+	  <br>
+        <h2 class="featurette-heading">Robot mozgatása II. </h2>
+        <p class="lead">Potméter pillanatragasztóval rögzítve is el tud mászni, ezért a motorokat mindig újra kell kalibrálni.
         Az első verzióban az arduinoban volt az offset érték tárolva.
-        Később ezt a roboton lehetett állítani.
-        Essort - 2017
-        HURBA
-        Robot mozgatása - Szervó vezérlés
-        A szervó motorok PWM jellel vezérelhetőek.
+        Később ezt a roboton lehetett állítani. Most Adafruit szervó shieldet használunk, amivel sokkal stabilabb a működés.</p>
+      </div>
+    
+		
+	  </div>
+	  
+	 
 
-        Az Arduino verzióval nem volt elég stabil a működés.
+	
+	
+	
+	
+	
+	
+	
+	
+<!--	
+	
+<div>
 
-        Most Adafruit szervó shieldet használunk, amivel sokkal stabilabb a működés.
-        Essort - 2017
-        HURBA
-        Robot mozgatása - Programozás
-        Essort - 2017
-        HURBA
+    <h3>
+
+           
         Robot mozgatása - Programozás
         Essort - 2017
         HURBA
@@ -200,7 +265,7 @@
 
     </h3>
 
-</div>
+</div> -->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
